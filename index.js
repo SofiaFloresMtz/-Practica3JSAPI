@@ -1,9 +1,10 @@
 function Leer() {
-    const Pelicula = document.getElementById("input").value;
+    const ciudad = document.getElementById("input").value;
     //obtain an apikey on this web
     //http://www.omdbapi.com/apikey.aspx
-    const key='58d7c1b2';
-    const api_url=`http://www.omdbapi.com/?s=${Pelicula}&apikey=${key}`
+    //const key='58d7c1b2';
+    //const api_url=`http://www.omdbapi.com/?s=${ciudad}&apikey=${key}`
+    const api_url=`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=e8fc2ecec2fe6056787cae875471c66&lang=es`
     buscar3(api_url);
 }
 
