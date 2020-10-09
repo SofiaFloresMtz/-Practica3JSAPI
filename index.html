@@ -16,7 +16,7 @@
 
 <body> 
     <nav class="navbar navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Soflix, el mejor lugar para buscar peliculas</a>
+        <a class="navbar-brand" href="#">Soflix, el mejor lugar para saber el clima</a>
     </nav>
 
     <div class="container p-3 my-3">
@@ -24,15 +24,18 @@
             
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
-                  <span class="input-group-text" id="inputGroup-sizing-default">¿Que Pelicula andas buscando?</span>
+                  <span class="input-group-text" id="inputGroup-sizing-default">¿De que ciudad quieres saber el clima?</span>
                 </div>
-                <input type="text" id="input" onKeyUp="Leer()" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                <input type="text" id="input" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                <button onclick="Leer()" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">Buscar</button>
             </div>
             <div class="col-md-12">
                 <h3 style="text-align:center">Resultado de tu busqueda, espero te guste</h3>
-
-                <div class="row" style="display:flex; 
-                flex-Direction:row; flex-Wrap:wrap; 
+                
+                <br>
+                <div class="row" style="display:flex; margin: auto;
+                flex-Direction:row; flex-Wrap:wrap; border-style: solid;
+                border-color: #aaaaaa; text-align: center;
                 justify-Content:space-around" id="lista">
 
                 </div>
